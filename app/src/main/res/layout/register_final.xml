@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginVertical="80dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="회원가입하고\n서비스를 사용해보세요!"
+            android:textSize="22sp"
+            android:textColor="#FFFFFF"
+            android:fontFamily="@font/roboto_bold"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:fontFamily="@font/roboto_thin"
+            android:backgroundTint="#B5B5B5"
+            android:hint="아이디 입력"
+            android:inputType="text"
+            android:textColorHint="#7A7A7A"
+            android:layout_marginTop="50dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="· 6자 ~ 14자 사이로 설정"
+            android:textSize="12sp"
+            android:textColor="#A1A1A1"
+            android:fontFamily="@font/roboto_regular"
+            android:layout_marginTop="5dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:fontFamily="@font/roboto_thin"
+            android:backgroundTint="#B5B5B5"
+            android:hint="비밀번호 입력"
+            android:inputType="textPassword"
+            android:textColorHint="#7A7A7A"
+            android:layout_marginTop="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="· 특수기호(*&amp;^%$#@), 연속적인 문자 금지"
+            android:textSize="12sp"
+            android:textColor="#A1A1A1"
+            android:fontFamily="@font/roboto_regular"
+            android:layout_marginTop="5dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:fontFamily="@font/roboto_thin"
+            android:backgroundTint="#B5B5B5"
+            android:hint="비밀번호 재입력"
+            android:inputType="textPassword"
+            android:textColorHint="#7A7A7A"
+            android:layout_marginTop="20dp"/>
+        <!---이 밑으로 수정 필요-->
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"
+            android:text="개인정보 수집 및 이용동의 (필수)"
+            android:textSize="13sp"
+            android:textColor="#B5B5B5"
+            android:fontFamily="@font/roboto_bold"
+            android:layout_marginTop="40dp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background = "#B5B5B5"
+            android:layout_marginTop="10dp"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="13dp"
+            android:text="개인정보 수집 및 이용동의 (필수)"
+            android:textSize="11sp"
+            android:textColor="#B5B5B5"
+            android:fontFamily="@font/roboto_regular"
+            android:layout_marginTop="10dp"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="13dp"
+            android:text="개인정보 제공동의 (필수)"
+            android:textSize="11sp"
+            android:textColor="#B5B5B5"
+            android:fontFamily="@font/roboto_regular"
+            android:layout_marginTop="15dp"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="13dp"
+            android:text="개서비스 알림동의 (선택)"
+            android:textSize="11sp"
+            android:textColor="#B5B5B5"
+            android:fontFamily="@font/roboto_regular"
+            android:layout_marginTop="15dp"/>
+    </LinearLayout>
+    <android.widget.Button
+        android:id="@+id/ok_button"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="확인"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:fontFamily="@font/roboto_black"
+        android:background="@drawable/ok_button"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

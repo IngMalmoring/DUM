@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1B1B1B"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:id="@+id/inputidText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="아이디를 입력해주세요"
+        android:textSize="22sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/roboto_bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="105dp"
+        android:layout_marginLeft="25dp"/>
+    <TextView
+        android:id="@+id/a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="비밀번호를 찾기 위해 필요합니다"
+        android:textSize="12sp"
+        android:textColor="#848484"
+        android:fontFamily="@font/roboto_thin"
+        app:layout_constraintLeft_toLeftOf="@id/inputidText"
+        app:layout_constraintTop_toBottomOf="@id/inputidText"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="7dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:hint = "아이디 입력"
+        android:textColorHint="#B5B5B5"
+        android:backgroundTint="#B5B5B5"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        app:layout_constraintTop_toBottomOf="@id/a"
+        android:layout_marginTop="50dp"/>
+    <android.widget.Button
+        android:id="@+id/ok_button"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="확인"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:fontFamily="@font/roboto_black"
+        android:background="@drawable/ok_button"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
